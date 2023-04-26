@@ -14,11 +14,11 @@ local function GetAllClothesTable()
         [11] = "JBIB"
     }
     local clothesTable = {}
-
+    local playerPed = PlayerPedId()
     for i, category in pairs(clothesCategory) do
-        local drawableVariation = GetPedDrawableVariation(PlayerPedId(), i)
-        local textureVariation = GetPedTextureVariation(PlayerPedId(), i)
-        local numberOfTextures = GetNumberOfPedTextureVariations(PlayerPedId(), i, drawableVariation)
+        local drawableVariation = GetPedDrawableVariation(playerPed, i)
+        local textureVariation = GetPedTextureVariation(playerPed, i)
+        local numberOfTextures = GetNumberOfPedTextureVariations(playerPed, i, drawableVariation)
 
         clothesTable[category] = {
             objID = drawableVariation,

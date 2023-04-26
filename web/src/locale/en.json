@@ -1,0 +1,30 @@
+{   
+    "categories": {
+        "hair": "Hair",
+        "mask": "Mask",
+        "hands": "Hands",
+        "shirt": "Shirt",
+        "scarf": "Scarf and chains",
+        "jackets": "Jackets",
+        "shoes": "Shoes",
+        "bags": "Bags",
+        "armor": "Armor",
+        "legs": "Legs",
+        "face": "Face"
+    },
+    "mode": {
+        "aggressive": {
+            "title": "Agressive Mode:",
+            "description": "This mode usually finds the only correct option, but may not find some of your clothes. If not, use chill mode."
+        },
+        "chill": {
+            "title": "Chill Mode:",
+            "description": "This mod it will find the correct option but it may produce more than one result, switch to aggressive mode if there are too many options"
+        }
+    },
+    "results": {
+        "found": "results found",
+        "notFound": "no results found"
+    },
+    "feedback": "Give us feedback and contribute to the um-soup project"
+}

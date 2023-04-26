@@ -1,0 +1,30 @@
+{   
+    "categories": {
+        "hair": "Saç",
+        "mask": "Maske",
+        "hands": "Eller",
+        "shirt": "Tshirt",
+        "scarf": "Kolye",
+        "jackets": "Ceket",
+        "shoes": "Ayakkabı",
+        "bags": "Çanta",
+        "armor": "Zırh",
+        "legs": "Pantolon",
+        "face": "Yüz"
+    },
+    "mode": {
+        "aggressive": {
+            "title": "Agresif Mod:",
+            "description": "Bu mod genellikle tek doğru seçenek bulur, ancak bazı giysilerinizi bulamayabilir. Eğer bulamazsanız rahat mod kullanın."
+        },
+        "chill": {
+            "title": "Rahat Mod:",
+            "description": "Bu mod doğru seçeneği bulacaktır ancak birden fazla sonuç üretebilir, çok fazla seçenek varsa agresif moda geçin."
+        }
+    },
+    "results": {
+        "found": "sonuç bulundu",
+        "notFound": "sonuç bulunamadı"
+    },
+    "feedback": "Bize geri bildirim verin ve um-soup'a katkıda bulunun."
+}

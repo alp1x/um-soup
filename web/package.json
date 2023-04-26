@@ -1,0 +1,28 @@
+{
+  "name": "um-soup",
+  "private": true,
+  "version": "beta",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@iconify-json/tabler": "^1.1.74",
+    "@neodrag/vue": "^2.0.3",
+    "@soerenmartius/vue3-clipboard": "^0.1.2",
+    "pinia": "^2.0.35",
+    "vue": "^3.2.47",
+    "vue-i18n": "9"
+  },
+  "devDependencies": {
+    "@unocss/preset-attributify": "^0.51.6",
+    "@unocss/preset-icons": "^0.51.6",
+    "@unocss/preset-uno": "^0.51.6",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "unocss": "^0.51.6",
+    "vite": "^4.3.0"
+  }
+}

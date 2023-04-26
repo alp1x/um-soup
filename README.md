@@ -19,3 +19,34 @@
 * **Command:** `/umsoup`
 
 ![](https://cdn.discordapp.com/attachments/1016069609897595011/1100776123811495966/image.png)
+
+
+## Development
+```
+git clone https://github.com/alp1x/um-soup
+```
+
+```
+cd um-soup
+```
+
+```
+cd web
+```
+
+`If you don't have pnpm`
+```
+npm install -g pnpm
+```
+
+```
+pnpm i
+```
+Build
+```
+pnpm run build
+```
+Watch
+```
+pnpm run watch
+```

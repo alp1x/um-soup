@@ -45,19 +45,13 @@ def extract_category(filename):
 
     parts = filename.split('^')[1].split('_')
     category = parts[0]
-    #print("parts: ", parts)
-    #print("category: ", category)
     if category.startswith('p'):
         category = parts[1]
-        #print("if-category: ", category)
     return category.upper()
 
 def extract_item_number(filename):
     # Öğe numarasını dosya adından çıkarır ve başındaki sıfırları kaldırır
-    # mp_m_freemode_01_mp_m_smuggler_01^accs_000_u.ydd
-     # mp_m_freemode_01_mp_m_smuggler_01^accs_000_u.ydd
-     # mp_m_freemode_01_p^p_head_diff_043_e.ytd
-     
+    
     parts = filename.split('^')[1].split('_')
     number = parts[3] if parts[2].startswith('diff') else parts[2]
     if number.startswith('0') and not number.startswith('000'):
@@ -69,12 +63,8 @@ def extract_item_number(filename):
 
 def extract_texture_letter(filename):
     # Texture harfini dosya adından çıkarır
-    # parts:  ['p', 'head', 'diff', '001', 'g.ytd']
-    # mp_m_freemode_01_p_m_lowrider_01^p_head_diff_001_g.ytd
     
     parts = filename.split('^')[1].split('_')
-    #print("filename: ", filename)
-    #print("parts: ", parts)
     diff_str = None
     for part in parts:
         if part.startswith('diff'):

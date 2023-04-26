@@ -6,6 +6,7 @@
 
 ## Usage
 * First download the **[release](https://github.com/alp1x/um-soup/releases/tag/beta)**
+* and download **[python 3.11.3](https://www.python.org/downloads/release/python-3113/)**
 * Now open the `convertJSON` folder and launch `start.bat`
 * Now copy the clothes stream folder and `right-click` on the `terminal`
 * ⚠️ `There should not be a different folder inside your stream folder, if there is, it is a categorized clothes folder`

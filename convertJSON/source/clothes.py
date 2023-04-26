@@ -51,8 +51,12 @@ def extract_category(filename):
 
 def extract_item_number(filename):
     # Öğe numarasını dosya adından çıkarır ve başındaki sıfırları kaldırır
-    
     parts = filename.split('^')[1].split('_')
+    
+    # Eğer parts listesi yeterli uzunlukta değilse, hata olmaması için bir default değer - um
+    if len(parts) < 4:
+        return "0"
+
     number = parts[3] if parts[2].startswith('diff') else parts[2]
     if number.startswith('0') and not number.startswith('000'):
         return number.lstrip('0')
@@ -114,8 +118,9 @@ for filename in os.listdir(directory):
                     clothes_dict[root_name][category][item_number]["textures"].append(texture_letter)
                     clothes_dict[root_name][category][item_number]["textures"].sort()
 
-current_directory = os.getcwd()
-target_directory = os.path.join(os.path.dirname(current_directory), "web", "build")
+current_directory = os.path.dirname(os.path.realpath(__file__))
+parent_directory = os.path.dirname(os.path.dirname(current_directory))
+target_directory = os.path.join(parent_directory, "web", "build")
 output_file_path = os.path.join(target_directory, "clothes.json")
 
 with open(output_file_path, 'w') as output_file:

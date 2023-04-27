@@ -12,7 +12,7 @@
 </sup>
 
 ## 🥣 Setup
-### Download the **[release](https://github.com/alp1x/um-soup/releases/tag/b-v1.0.0)** not source! and **[py-3.11.3](https://www.python.org/downloads/release/python-3113/)**
+### Download the **[release](https://github.com/alp1x/um-soup/releases/latest)** not source! and **[py-3.11.3](https://www.python.org/downloads/release/python-3113/)**
 
 * Now open the `convertJSON` folder and launch `start.bat`
 ### Now copy the clothes stream folder path 

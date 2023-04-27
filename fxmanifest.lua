@@ -4,10 +4,10 @@ lua54 'yes'
 
 name 'um-soup'
 author 'uyuyorum {um}'
-version 'beta'
+version '1.0.0'
 license 'GPL-3.0 license'
 repository 'https://github.com/alp1x/um-soup'
-description 'FiveM Clothes File Finder'
+description 'FiveM Clothing File Finder or Matcher'
 
 ui_page 'web/build/index.html'
 client_script 'client/main.lua'

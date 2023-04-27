@@ -5,11 +5,12 @@
   <div mt10 color-black p10 rounded-1 all:transition-200 overflow-auto overscroll-revert v-if="resultState" style='max-height: 12rem;'
   :class="resultFiles.length === 1 ? 'bg-green' : (resultFiles.length > 1 && resultFiles.length <= 4 ? 'bg-orange' : 'bg-red')"
   >
-    <div rounded p1 bg-purple>
+    <div rounded p1 bg-orange-1>
+      <button i-tabler-category-2></button>
       {{ resultCategory }}
     </div>
     <div mt3 t> 
-      {{ resultFiles.length }} {{ t('results.found') }}
+      {{ resultFiles.length }} {{ $t('results.found') }}
     </div>
     <div p2 m5 bg-orange-1 rounded-1 hover:op80 cursor-pointer v-for="(resultFile, index) in resultFiles" :key="index" v-clipboard="resultFile">
       {{ resultFile }}
@@ -17,7 +18,7 @@
     </div>
   </div>
   <div v-else mt30 flex items-center>
-    <span bg-red p1 rounded color-black font-mono >{{ t('results.notFound') }}</span>
+    <span bg-red p1 rounded color-black font-mono >{{ $t('results.notFound') }}</span>
   </div>
 </template>
 
@@ -25,7 +26,6 @@
 import { ref } from "vue";
 import { useClothesStore } from "../store/clothesStore";
 import { formatClothesFileName } from "../utils/clothesUtils";
-import { useI18n } from 'vue-i18n'
 import Button from "./Button.vue";
 import CharacterModel from "./CharacterModel.vue";
 import FindMode from "./FindMode.vue";
@@ -36,7 +36,6 @@ const resultFiles = ref([]);
 const resultCategory = ref('');
 const defaultModel = ref('mp_m');
 const findModeRef = ref(false);
-const { t } = useI18n()
 
 const characterModel = (model) => {
   defaultModel.value = model;

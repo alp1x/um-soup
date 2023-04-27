@@ -1,9 +1,12 @@
 <template>
-    <select v-model="selectLang" @change="changeLanguage" p1 bg-purple cursor-pointer hover:bg-gray i-tabler-language font-mono text-center m5 w25 text-l>
-      <option :value="item" v-for="item in availableLocales" :key="item">
+  <div absolute top-5 right-0 left-3 p1 bg-orange-2 cursor-pointer font-mono text-center m5 w25 rounded-1 color-black>
+    <button i-tabler-language text-l cursor-pointer></button>
+    <select v-model="selectLang" @change="changeLanguage" cursor-pointer bg-transparent border-none font-mono>
+      <option :value="item" v-for="item in availableLocales" :key="item" color-black>
         {{ item.toUpperCase()}} 
       </option>
     </select>
+    </div>
 </template>
   
 <script setup>

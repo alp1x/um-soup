@@ -36,24 +36,28 @@ if not directory.endswith(r'\stream'):
     print(f"{TerminalColors.FAIL}Please specify only the [stream] folder of your clothes folder{TerminalColors.ENDC}")
     sys.exit()
 
+# [TR] Kök adını dosya adından çıkarır
+# [EN] Removes the root name from the file name
 def extract_root_name(filename):
-    # Kök adını dosya adından çıkarır
     return filename.split('^')[0]
 
+# [TR] Kategori adını dosya adından çıkarır ve gerektiğinde 'p_' önekini kaldırır
+# [EN] Extracts the category name from the file name and removes 'p_' prefix if necessary
 def extract_category(filename):
-    # Kategori adını dosya adından çıkarır ve gerektiğinde 'p_' önekini kaldırır
-
     parts = filename.split('^')[1].split('_')
     category = parts[0]
     if category.startswith('p'):
         category = parts[1]
     return category.upper()
 
+
 def extract_item_number(filename):
-    # Öğe numarasını dosya adından çıkarır ve başındaki sıfırları kaldırır
+     # [TR] Öğe numarasını dosya adından çıkarır ve başındaki sıfırları kaldırır
+     # [EN] Extracts the item number from the file name and removes leading zeros
     parts = filename.split('^')[1].split('_')
     
-    # Eğer parts listesi yeterli uzunlukta değilse, hata olmaması için bir default değer - um
+    # [TR] Eğer parts listesi yeterli uzunlukta değilse, hata olmaması için bir default değer - um
+    # [EN] If the parts list is not long enough, uses a default value - um to avoid errors - um
     if len(parts) < 4:
         return "0"
 
@@ -65,9 +69,9 @@ def extract_item_number(filename):
     else:
         return number
 
+# [TR]Texture harfini dosya adından çıkarır
+# [EN] Extracts the texture letter from the file name
 def extract_texture_letter(filename):
-    # Texture harfini dosya adından çıkarır
-    
     parts = filename.split('^')[1].split('_')
     diff_str = None
     for part in parts:
@@ -83,14 +87,15 @@ def extract_texture_letter(filename):
 clothes_dict = {}
 
 for filename in os.listdir(directory):
-    # '.ydd' veya '.ytd' içeren ve '^' ile ayrılmış dosya adlarını işler
+    # [TR] '.ydd' veya '.ytd' içeren ve '^' ile ayrılmış dosya adlarını işler
+    # [EN] Processes file names containing '.ydd' or '.ytd' and separated by '^'
 
     if ('.ydd' in filename or '.ytd' in filename) and '^' in filename:
         root_name = extract_root_name(filename)
         category = extract_category(filename)
 
-        # Gerekirse kök adı ve kategori için boş sözlükler oluşturur
-
+        # [TR] Gerekirse kök adı ve kategori için boş sözlükler oluşturur
+        # [EN] Creates empty dictionaries for root name and category if necessary
         if root_name not in clothes_dict:
             clothes_dict[root_name] = {}
         if category not in clothes_dict[root_name]:
@@ -98,20 +103,19 @@ for filename in os.listdir(directory):
 
         item_number = extract_item_number(filename)
 
-        # .ydd dosyaları için öğe numarasını ve textures listesini oluşturur
-
+        # [TR] .ydd dosyaları için öğe numarasını ve textures listesini oluşturur
+        # [EN] For .ydd files, creates the item number and textures list
         if filename.endswith('.ydd'):
             if item_number not in clothes_dict[root_name][category] and not item_number.endswith('.ydd'):
                 clothes_dict[root_name][category][item_number] = {"textures": []}
 
-        # .ytd dosyaları için, textures listesine texture harflerini ekler
-
+        # [TR] .ytd dosyaları için, textures listesine texture harflerini ekler
+        # [EN] For .ytd files, adds texture letters to the textures list
         if filename.endswith('.ytd'):
             texture_letter = extract_texture_letter(filename)
             if texture_letter is not None and texture_letter.endswith('.ytd'):
                 texture_letter = texture_letter[:-4]
             if texture_letter is not None:
-                #print("item_number: ", item_number)
                 if item_number not in clothes_dict[root_name][category]:
                     clothes_dict[root_name][category][item_number] = {"textures": []}
                 if texture_letter not in clothes_dict[root_name][category][item_number]["textures"]:

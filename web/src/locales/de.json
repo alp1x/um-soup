@@ -1,0 +1,30 @@
+{
+    "categories": {
+        "hair": "Haare",
+        "mask": "Maske",
+        "hands": "Hände",
+        "shirt": "Hemd",
+        "scarf": "Schal und Ketten",
+        "jackets": "Jacken",
+        "shoes": "Schuhe",
+        "bags": "Taschen",
+        "armor": "Rüstung",
+        "legs": "Beine",
+        "face": "Gesicht"
+    },
+    "mode": {
+        "aggressive": {
+            "title": "Aggressiver Modus:",
+            "description": "Dieser Modus findet normalerweise die einzige richtige Option, erkennt jedoch möglicherweise nicht alle Ihre Kleidungsstücke. Wenn nicht, verwenden Sie den Chill-Modus."
+        },
+        "chill": {
+            "title": "Chill-Modus:",
+            "description": "In diesem Modus wird die richtige Option gefunden, es können jedoch mehrere Ergebnisse erzeugt werden. Wechseln Sie zum aggressiven Modus, wenn es zu viele Optionen gibt."
+        }
+    },
+    "results": {
+        "found": "Ergebnisse gefunden",
+        "notFound": "keine Ergebnisse gefunden"
+    },
+    "feedback": "Geben Sie uns Feedback und tragen Sie zum um-soup-Projekt bei"
+}

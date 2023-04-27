@@ -1,7 +1,6 @@
 <template>
-    <div @click="characterModelToggle" p2 rounded bg-pink color-black cursor-pointer>
-    <button i-tabler-gender-bigender text-2xl></button>
-     Model: {{ characterModel }}
+    <div @click="characterModelToggle" p1 rounded color-black cursor-pointer mt10 :class="{'bg-blue-3': characterModel === 'mp_m', 'bg-pink-3': characterModel === 'mp_f'}">
+    <button i-tabler-gender-bigender text-xl></button> Model: {{ characterModel }}
     </div>
 </template>
 

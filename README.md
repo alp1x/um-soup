@@ -1,10 +1,16 @@
 <div align="center">
-<img src="https://cdn.discordapp.com/attachments/1016069609897595011/1101229011742507040/um-soup-logo.png" width=64 height=64>
+<img src="https://cdn.discordapp.com/attachments/1016069609897595011/1101229011742507040/um-soup-logo.png" width=64 height=64><br>
 </div>
 
 # um-soup `v1.0.0`
 <sup>um-soup is a convenient and practical tool designed to help you quickly find the clothing file you're looking for in your unorganized, <b>single-folder clothing</b>. If your clothing folder is a jumbled mess without any categorization, um-soup comes to the rescue by matching the desired clothing file based on your character's outfits. This open-source project provides a user-friendly solution for users dealing with a cluttered clothing folder.<br>
 [🌐 Lang Contribution](https://github.com/alp1x/um-soup/tree/main/web/src/locales)
+<p align="center">
+<a href="https://uyuyorumstore.com"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044857362617470986/Baslksz-3.png"></a>
+<a href="https://uyuyorumstore.com"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044848075996405820/coffee.png"></a>
+<a href="https://choosealicense.com/licenses/gpl-3.0/"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044845854508449822/license.png"></a>
+<a href="https://discord.gg/uyuyorum"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044855172494532628/discord.png"></a>
+</p>
 </sup>
 
 ## 🥣 Setup

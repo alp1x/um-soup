@@ -13,18 +13,14 @@
         "face": "Yüz"
     },
     "mode": {
-        "aggressive": {
-            "title": "Agresif Mod:",
-            "description": "Bu mod genellikle tek doğru seçenek bulur, ancak bazı giysilerinizi bulamayabilir. Eğer bulamazsanız rahat mod kullanın."
-        },
-        "chill": {
-            "title": "Rahat Mod:",
-            "description": "Bu mod doğru seçeneği bulacaktır ancak birden fazla sonuç üretebilir, çok fazla seçenek varsa agresif moda geçin."
-        }
+        "title": "UM Mode:",
+        "description": "Modlar birleştirilerek tüm seçenekleri deneyen ve size en iyi seçeneği sunmaya çalışan tek bir mod oluşturuldu."
     },
     "results": {
         "found": "sonuç bulundu",
-        "notFound": "sonuç bulunamadı"
+        "notFound": "sonuç bulunamadı",
+        "infoMeta": "Bu kıyafet .meta ile kategorize edilmiş olabilir, bu nedenle bunun slot numarasıyla eşleşmeyebilir",
+        "infoDefault": "Bu kıyafet bir vanilya varsayılanı olabilir, bu nedenle kıyafet dosyası stream klasörünüzde değildir"
     },
     "feedback": "Bize geri bildirim verin ve um-soup'a katkıda bulunun."
 }

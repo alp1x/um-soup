@@ -5,17 +5,21 @@
       :key="item.icon"
       mr-2 hover:bg-gray scale cursor-pointer text-1xl bg-orange p2 font-semibold rounded border-none text-sm
       @click="handleClick(item.category)"
+      :class="{ 'active': selectedCategory === item.category }"
     >{{item.name}}</button>
   </div>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { computed } from 'vue'
+import { ref,computed } from 'vue'
 
 const { t } = useI18n()
 const emit = defineEmits(['get-category'])
+const selectedCategory = ref('')
+
 const handleClick = (category) => {
+  selectedCategory.value = category
   emit('get-category', category)
 }
 
@@ -40,3 +44,10 @@ const translatedCategories = computed(() =>
   }))
 )
 </script>
+
+
+<style scoped>
+.active {
+  background-color: #9ca3af;
+}
+</style>

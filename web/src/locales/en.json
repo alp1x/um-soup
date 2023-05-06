@@ -13,18 +13,14 @@
         "face": "Face"
     },
     "mode": {
-        "aggressive": {
-            "title": "Agressive Mode:",
-            "description": "This mode usually finds the only correct option, but may not find some of your clothes. If not, use chill mode."
-        },
-        "chill": {
-            "title": "Chill Mode:",
-            "description": "This mod it will find the correct option but it may produce more than one result, switch to aggressive mode if there are too many options"
-        }
+        "title": "UM Mode:",
+        "description": "The modes have been merged to create a single mode that tries all options and tries to give you the best option."
     },
     "results": {
         "found": "results found",
-        "notFound": "no results found"
+        "notFound": "no results found",
+        "infoMeta": "This outfit may be categorized with .meta, so not match the slot number of this one",
+        "infoDefault": "This outfit may be a vanilla default so the outfit file is not in your stream folder"
     },
     "feedback": "Give us feedback and contribute to the um-soup project"
 }

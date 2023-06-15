@@ -8,7 +8,7 @@
 
 # um-soup `v1.5.0`
 <sup>um-soup is a convenient and practical tool designed to help you quickly find the clothing file you're looking for in your unorganized, <b>single-folder clothing</b>. If your clothing folder is a jumbled mess without any categorization, um-soup comes to the rescue by matching the desired clothing file based on your character's outfits. This open-source project provides a user-friendly solution for users dealing with a cluttered clothing folder.<br>
-[🌐 Lang Contribution](https://github.com/alp1x/um-soup/tree/main/web/src/locales)
+[🌐 Lang ](https://github.com/alp1x/um-soup/tree/main/web/src/locales)
 </sup>
 
 ## 🥣 Setup

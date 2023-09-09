@@ -3,7 +3,7 @@
 <a href="https://uyuyorumstore.com"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044857362617470986/Baslksz-3.png"></a>
 <a href="https://uyuyorumstore.com"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044848075996405820/coffee.png"></a>
 <a href="https://choosealicense.com/licenses/gpl-3.0/"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044845854508449822/license.png"></a>
-<a href="https://discord.gg/uyuyorum"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044855172494532628/discord.png"></a>
+<a href="https://discord.gg/uyuyorumstore"><img src="https://cdn.discordapp.com/attachments/715130970294059088/1044855172494532628/discord.png"></a>
 </div>
 
 # um-soup `v1.5.0`
